@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="TowarStyle.css">
+    </head>
+    <body>
+        
+        <div class="body_wrapper">
+            <header class="header">
+                <nav class="navbar_header">
+                    <a href="index.html"> <span>Tote</span> <br>Funky Printed bags</a>
+                    <button class="header_burger_btn" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="links" id="menu">
+                        <ol class="table_links">
+                            <li><a href="index.html#First">Shop</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="Contacts.html">Contacts</a></li>
+                        </ol>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+      
+        <section class="slider">
+            <div class="img">  
+                <img src="Foto/1.webp" alt="" id="slider">
+                <p>I'm a product description. I'm a great place 
+                    to add more details about your product such as
+                     sizing, material, care instructions and cleaning 
+                     instructions.</p>
+            </div>
+            
+            <aside class="panel">
+                <div class="img_btn">
+                    <button onclick="prev()" class="prev">
+                        <span class="arrow-left"></span> Prev <span class="palka" >|</span></button>
+                        
+                    <button onclick="next()" class="next">Next <span class="arrow-right"></span>
+                    </button>
+                </div>
+                
+                <h1>I'm a product</h1>
+                <h2>$15.00</h2>
+
+                <form class="quantity-form">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </form>
+
+                <button  onclick="logo()"  class="btn_asid"> Buy Now</button>
+                
+                <h2>PRODUCT INFO</h2>
+                <p>I'm a product detail. I'm a great place to add more 
+                    information about your product such as sizing, material, 
+                    care and cleaning instructions. This is also a great space 
+                    to write what makes this product special and how your customers
+                     can benefit from this item.</p>
+                
+            </aside>
+        </section>
+      
+        <footer class="footer">
+            <div class="flex">
+                <div class="shoping">
+                    <p>Shipping & Returns</p>
+                    <p>Store Policy</p>
+                    <p>Payment Methods</p>
+                </div>
+        
+                <div class="contacts">
+                    <p>Contact</p>
+                    <p>Tel: 123-456-7890</p>
+                    <p>info@mysite.com</p>       
+                </div>
+        
+                <div class="Seti">
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Pinterest</p>  
+                </div>
+            </div>
+            <a href="#" class="textUp">Join our mailing list and never miss an update</a>
+                <div class="texter">
+                    <textarea name="text" id="text"></textarea>
+                    <button class="btn" onclick="clearText()">Subscribe Now</button>
+                </div>
+        </footer>
+        
+        <script src="TowarLogickF.js" async defer></script>
+    </body>
+</html>

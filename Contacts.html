@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ContactsStyle.css">
+    </head>
+    <body>
+        <div class="body_wrapper">
+            <header class="header">
+                <nav class="navbar_header">
+                    <a href="index.html"> <span>Tote</span> <br>Funky Printed bags</a>
+                    <button class="header_burger_btn" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="links" id="menu">
+                        <ol class="table_links">
+                            <li><a href="index.html#first">Shop</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ol>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+
+
+        <section class="main">
+            <div class="contacts">
+                <h1>Contact</h1>    
+                <h2>You're welcome to contact us with any inquiry</h2>          
+                <h3> Tel: 123-456-7890 | info@mysite.com</h3>  
+                <div class="forms">
+                    <div class="form-group">
+                        <label for="firstName" >First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="formS">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" >Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="formS">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" >Email</label>
+                        <input type="email" id="email" name="email" class="formS">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" >Phone</label>
+                        <input type="text" id="phone" name="phone" class="formS">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" >Message</label>
+                        <textarea id="message" name="message" class="formS"></textarea>
+                    </div>
+                </div>
+                <button id="btn"d onclick="cleen()">Submit</button>
+            </div>
+        </section>
+
+
+   <footer class="footer">
+            <div class="flex">
+                <div class="shoping">
+                    <p>Shipping & Returns</p>
+                    <p>Store Policy</p>
+                    <p>Payment Methods</p>
+                </div>
+        
+                <div class="contacts">
+                    <p>Contact</p>
+                    <p>Tel: 123-456-7890</p>
+                    <p>info@mysite.com</p>       
+                </div>
+        
+                <div class="Seti">
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Pinterest</p>  
+                </div>
+            </div>
+            <a href="#" class="textUp">Join our mailing list and never miss an update</a>
+                <div class="texter">
+                    <textarea name="text" id="text"></textarea>
+                    <button class="btn" onclick="clearText()">Subscribe Now</button>
+                </div>
+        </footer>
+        
+        <script src="ContactsLog.js" async defer></script>
+    </body>
+</html>

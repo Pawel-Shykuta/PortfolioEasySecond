@@ -1,0 +1,436 @@
+html{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+                                    /*  HEADER */
+
+.body_wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+   
+}
+
+
+.navbar_header{
+    background-color: rgb(247, 250, 250);
+    width: 100%;
+    position: fixed;
+    height: auto;
+}
+                                  
+.navbar_header a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    padding-top: 20px;
+    font-weight: 500;
+
+}
+
+.navbar_header span{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-left: 30%;
+}
+
+.table_links li {
+   
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    list-style-type: none;
+    margin: 0 5px; /* Отступы между элементами списка */
+    transition: all .3s ease;
+}
+
+.table_links li:hover{
+    opacity: .7;
+}
+
+.navbar_header{
+    width: 100%;
+    display: flex;
+    
+}
+
+
+.table_links a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.header_burger_btn{
+    
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    display: none;
+    margin-left: 40%;
+    margin-top: 5%;
+    z-index: 2;
+}
+
+
+
+.header_burger_btn span{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    transition: opacity .25s,transform .5s;
+    background-color: black;
+    will-change: transform;
+}
+
+.header_burger_btn span:nth-child(1){
+    background-color: rgb(11, 14, 14);
+    transform: translateY(-10px);
+}
+
+.header_burger_btn span:nth-child(2){
+    background-color: rgb(17, 20, 18);
+}
+.header_burger_btn span:nth-child(3){
+    background-color: rgb(8, 8, 6);
+    transform: translateY(10px);
+}
+
+                                        /* KRESTICK */
+
+.header.open .header_burger_btn span:nth-child(1){
+    background-color: rgb(11, 14, 14);
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header_burger_btn span:nth-child(2){
+    background-color: rgb(17, 20, 18);
+    opacity: 0;
+}
+.header.open .header_burger_btn span:nth-child(3){
+    background-color: rgb(8, 8, 6);
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+
+
+
+
+                                                /*Foto for shop*/
+
+.First_Block{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.towar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Foto{
+    width: 100%;
+}
+
+.towar a{
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.towar a:hover{
+    opacity: .7;
+}
+
+
+                                                /*ABOUT*/
+
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text{ 
+    font-size: 30px; 
+    font-weight: 500;
+    width: 40%;
+}
+
+
+                                          /*FOOTER*/
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.flex{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer div{
+    padding: 60px;
+    
+}
+
+
+.footer p{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.textUp{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+textarea{
+    font-size: 20px;
+    width: 30%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 3px solid white;
+}
+
+.btn{
+    width: 260px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+
+.btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+@media(max-width:450px){
+
+    .links{
+        position: absolute;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        background-color: azure;
+        transition: transform .5s, visibility .5s;
+    }
+
+    .header_burger_btn{
+    
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        outline: none;
+        right: 10px;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+
+   .table_links li{
+    font-size: 60px;
+    padding: 10;
+    display: block;
+   }
+
+
+   
+.header_burger_btn{
+ 
+    display: block;
+}
+
+.header.open .links{
+    transform: translateX(-100%);
+    visibility:visible ;
+}
+
+
+                            /*Foto for shop*/
+
+.First_Block{
+    width: 100%;
+    display:block;
+    margin-top: 80px;
+ 
+}
+
+.towar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Foto{
+    width: 100%;
+}
+
+
+                                                /*ABOUT*/
+
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text{ 
+    font-size: 20px; 
+    font-weight: 600;
+    width: 80%;
+    line-height: 30px;
+}
+
+
+                                          /*FOOTER*/
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.flex{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer div{
+    padding: 20px;
+    
+}
+
+
+.footer p{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.textUp{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+textarea{
+    font-size: 20px;
+    width: 80%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 3px solid white;
+}
+
+.btn{
+    width: 260px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+
+
+}
+
+
+@media(max-width:375px){
+    .header_burger_btn{
+    
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        outline: none;
+        right: 10px;
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+
+}
+
+
+
+@media(max-width:330px){
+   
+    .header_burger_btn{
+    
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        outline: none;
+        
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+}
+
